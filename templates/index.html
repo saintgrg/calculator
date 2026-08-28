@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body{
+            font-family:Arial;
+            text-align:center;
+            margin-top:50px;
+        }
+
+        input,select,button{
+            padding:10px;
+            margin:5px;
+        }
+
+        .result{
+            color:green;
+            font-size:25px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<form method="POST">
+
+    <input type="number" step="any" name="num1" required>
+
+    <select name="operation">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <optio* value="divide">/</option>
+    </s*lect>
+
+    <input type="number" st*p="any" name="num2" required>
+
+   *<br>
+
+    <button type="submit">
+ *      Calculate
+    </button>
+
+</f*rm>
+
+{% if result != '' %}
+<div cl*ss="result">
+    Result: {{ result}}
+</div>
+{% endif %}
+
+</body>
+</html>
